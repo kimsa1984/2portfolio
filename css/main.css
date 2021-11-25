@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Open Sans',sans-serif; }
-    ul,ol,li {list-style: none;}
+    ul,ol,li {list-style: none; margin: 0; padding: 0;}
     a {text-decoration: none; color: #333;}
 
     :root {
@@ -18,10 +18,12 @@
     .container {width: 1300px; height: 870px; margin: 0 auto; padding: 0 15px 0 15px;border: 1px solid orange;} //주요 컨텐츠 사이즈
 
     #top {width: 100%; height: 600px ; position: relative;} 
-    #top>ul{display: inline; margin: 0; padding: 0; position: relative;}
-    #top>ul>li{display: inline-block; color: #faecf8;}
+    #top ul{display: inline; margin: 0; padding: 0; position: relative;}
+    #top ul li{display: inline-block; color: #faecf8;}
     #top ul li:hover {background: #f3f6f9;}
-    
+    #top ul li:hover ul {display: block;}
+    #top ul li ul{position: absolute;width: 200px;display: none; top: 30px; left: 0;}
+    #top ul li ul{background-color: #555;display: block;}
     
     
     #slider {width:100%; height: 479px; background-color: #ddd; }
