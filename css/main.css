@@ -18,13 +18,23 @@
     .container {width: 1300px; height: 870px; margin: 0 auto; padding: 0 15px 0 15px;border: 1px solid orange;} //주요 컨텐츠 사이즈
 
     #top {width: 100%; height: 600px ; position: relative;} 
+    #top>ul{display: inline; margin: 0; padding: 0; position: relative;}
+    #top>ul>li{display: inline-block; color: #f3f6f9;justify-content: space-between;}
+    #top ul li:hover {background: #f3f6f9;}
+    
+    
+    
     #slider {width:100%; height: 479px; background-color: #ddd; }
+    #slider img {width: 100%; height: 479px;}
 
     header {width: 100%; height: 120px; position: absolute; top: 0; left: 0;}
     
-    #topbar {width: 100%; height: 35px; background-color:var(--main_color_purple);}
+    #topbar {width: 100%; height:100px; background-color:var(--main_color_purple);}
     
+    
+
     #main_nav{width: 100%; height: 145px; background-color: rgba(53,10,78,0.6);}
+   
     
     #search {width: 100%; height: 190px; background: linear-gradient(to right,var(--main_color_orange),var(--gradient_color));}
 
