@@ -14,30 +14,89 @@
 <body>
   <div id="wrap">
     <div id="top">
-      <ul>
-        <li><a href="#">SEARCH</a></li>
-        <li><a href="#">HOME</a></li>
-        <ul>
-          <li><a href="#">Main Home</a></li>
-          <li><a href="#">Cocktail Bar</a></li>
-          <li><a href="#">Restaurant Divided</a></li>
-        </ul>
-        <li><a href="#">PAGES</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">SHOP</a></li>
-        <ul>
-          <li><a href="#">Product List</a></li>
-          <li><a href="#">Product Single</a></li>
-          <li><a href="#">Shop Pages</a></li>
-        </ul>
-        <li><a href="#">MENU</a></li>
-        <li><a href="#">LANDING</a></li>
-      </ul>
+      
+      
+      <div id="slider">
+        
+         <ul class="slide">
+          <li><img src="img/h1-slider-img-1.jpg" alt=""><h1>SYMPLY DELICIOUS</h1></li>
+          <li><img src="img/h1-slider-img-2.jpg" alt=""><h1>ALWAYS FRESH</h1></li>
+          <li><img src="img/h1-slider-img-3.jpg" alt=""><h1>FURE ARTISTRY</h1></li>
+         </ul>
+         <button><a href="#">VIEW MORE</a></button>
 
-      <div id="slider"><img src="img/h1-slider-img-1.jpg" alt=""></div>
+        
+      
+      
+      </div>
 
       <header>
         <div id="topbar">
+          <ul class="left_menu">
+            <li class="search_box"><a href="#"><img src="img/search.png" style="width: 15px,height:15px;">
+              SEARCH</a></li>
+            <li><a href="#">HOME</a></li>
+             <!-- <ul>
+              <li><a href="#">Main Home</a></li>
+              <li><a href="#">Cocktail Bar</a></li>
+              <li><a href="#">Restaurant Divided</a></li>
+            </ul>  -->
+            <li><a href="#">PAGES</a></li>
+            <li><a href="#">BLOG</a></li>
+          </ul>
+                      
+            <ul class="right_menu">
+            <li><a href="#">SHOP</a></li>
+             <!-- <ul>
+              <li><a href="#">Product List</a></li>
+              <li><a href="#">Product Single</a></li>
+              <li><a href="#">Shop Pages</a></li>
+            </ul>  -->
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">LANDING</a></li>
+          </ul>
+          <div class="top_logo"><img src="img/logo_kims.png" alt=""></div>
+          
+          <span class="prev">&lt;</span>
+
+          <span class="next">&gt;</span>
+
+</div>
+
+<script>
+
+​
+
+$('.prev').click(function(){
+
+$('.slide li:last').prependTo('.slide');
+
+$('.slide').css('margin-left',-1300);
+
+$('.slide').stop().animate({marginLeft:0},800)
+
+});
+
+​
+
+$('.next').click(function(){
+
+$('.slide').stop().animate({marginLeft:-1300},800, function(){
+
+$('.slide li:first').appendTo('.slide');
+
+$('.slide').css({marginLeft:0});
+
+});
+
+});
+
+​
+
+</script>
+
+​
+
 
         </div>
 

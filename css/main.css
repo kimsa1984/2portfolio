@@ -6,33 +6,49 @@
 
     :root {
       --main_color_orange:#fa9e1b;
-      --main_color_purple:#350a4e;
+      --main_color_pink:#e9adb8;
       --gradient_color:#8d4fff;
 
       --font_small:12px;
       --font_basic:14px;
       --font_logo:30px;
     }
+    /* *::before,
+    *::after { box-sizing: border-box;} */
 
-    #wrap {width: 100%; height: 600px;}
+    #wrap {width: 100%; height: 100%;}
     .container {width: 1300px; height: 870px; margin: 0 auto; padding: 0 15px 0 15px;border: 1px solid orange;} //주요 컨텐츠 사이즈
 
-    #top {width: 100%; height: 600px ; position: relative;} 
-    #top ul{display: inline; margin: 0; padding: 0; position: relative;}
-    #top ul li{display: inline-block; color: #faecf8;}
-    #top ul li:hover {background: #f3f6f9;}
-    #top ul li:hover ul {display: block;}
-    #top ul li ul{position: absolute;width: 200px;display: none; top: 30px; left: 0;}
-    #top ul li ul{background-color: #555;display: block;}
+    #top {width: 100%; height: 600px ; position: relative; } 
     
     
-    #slider {width:100%; height: 479px; background-color: #ddd; }
-    #slider img {width: 100%; height: 479px;}
+    #slider {width:100%; height:612px; background-color: #ddd;position: relative; overflow: hidden; }
+    .slide {width: 3900x; position: relative;}
+    .slide li {width: 100%; height: 612px; float: left;}
+    .slide li img {width: 100%; height: 100%;}
+    .slide h1 {box-sizing: border-box; font-size: 50px;}
+     button {width: 300px; height: 60px; background-color: black; color: #fff; top:0; left: 0;}
+    .prev {left:50%; border-radius: 0 10px 10px 0px; padding: 0 8px 0 2px;}
+    .next {right:50%; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}
 
+    
+  
     header {width: 100%; height: 120px; position: absolute; top: 0; left: 0;}
     
-    #topbar {width: 100%; height:100px; background-color:var(--main_color_purple);}
+    #topbar {width: 100%; height:100px; background-color:var(--main_color_pink);
+              display: flex;align-items: center;box-sizing: border-box;}
+    .left_munu{display:inline-flexbox; float: left; }
+    .lift_menu li{display: inline; color: #faecf8; padding:20px;}
+    .lift_menu li:hover {background: gold}
+    .search_box {width: 90px ; height: 120px;}
     
+    .right_menu {display: inline-flexbox; float: right; padding: 20px;}
+    .right_menu li{display: inline; color: #faecf8; padding:20px;}
+    .right_menu li:hover {background: gold}
+
+
+    
+   
     
 
     #main_nav{width: 100%; height: 145px; background-color: rgba(53,10,78,0.6);}
