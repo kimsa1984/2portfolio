@@ -9,7 +9,11 @@
 
   <link rel="stylesheet" href="css/main.css">
 
+
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js">
+  </script>
 </head>
+
 
 <body>
   <div id="wrap">
@@ -25,15 +29,43 @@
          </ul>
          <button><a href="#">VIEW MORE</a></button>
 
+        <span class="prev">&lt;</span>
         
-      
-      
+        <span class="next">&gt;</span>
+
+        <script>
+
+          $('.prev').click(function () {
+
+            $('.slide li:last').prependTo('.slide');
+
+            $('.slide').css('margin-left', -1300);
+
+            $('.slide').stop().animate({ marginLeft: 0 }, 800)
+
+          });
+
+
+          $('.next').click(function () {
+
+            $('.slide').stop().animate({ marginLeft: -1300 }, 800, function () {
+
+              $('.slide li:first').appendTo('.slide');
+
+              $('.slide').css({ marginLeft: 0 });
+
+            });
+
+          });
+
+        </script>
+
       </div>
 
       <header>
         <div id="topbar">
           <ul class="left_menu">
-            <li class="search_box"><a href="#"><img src="img/search.png" style="width: 15px,height:15px;">
+            <li class="search_box"><a href="#"><img src="img/search.png"> 
               SEARCH</a></li>
             <li><a href="#">HOME</a></li>
              <!-- <ul>
@@ -57,43 +89,10 @@
           </ul>
           <div class="top_logo"><img src="img/logo_kims.png" alt=""></div>
           
-          <span class="prev">&lt;</span>
-
-          <span class="next">&gt;</span>
+          
 
 </div>
 
-<script>
-
-​
-
-$('.prev').click(function(){
-
-$('.slide li:last').prependTo('.slide');
-
-$('.slide').css('margin-left',-1300);
-
-$('.slide').stop().animate({marginLeft:0},800)
-
-});
-
-​
-
-$('.next').click(function(){
-
-$('.slide').stop().animate({marginLeft:-1300},800, function(){
-
-$('.slide li:first').appendTo('.slide');
-
-$('.slide').css({marginLeft:0});
-
-});
-
-});
-
-​
-
-</script>
 
 ​
 
