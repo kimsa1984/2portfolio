@@ -55,9 +55,9 @@
     .container h3 {width: 929px ;  font-size: 40px;  font-family: "바탕"; margin: 0 auto; line-height: 1.5; text-align: center;}
     
     
-    #our_menu {width: 100%; height: 190px; display: flex; }
+    #our_menu {width: 100%; height: 190px; display: flex; background-color: rgb(137, 195, 235); }
     #our_menu .container span {color: rgb(240, 220, 223); font-size: 70px; }
-    #our_menu .container{width: 486px; height: 835px; justify-content: space-between; z-index: 5;}
+    #our_menu .container{width: 486px; height: 835px; justify-content: space-between; z-index: 4;}
 
     #intro {width: 100%; height: 500px;}
 
