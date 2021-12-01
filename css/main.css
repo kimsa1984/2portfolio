@@ -48,7 +48,7 @@
     .enjoy_box img {width: 100%; height: 100%;}
     .container h3 {width: 929px ;  font-size: 40px;  font-family: "바탕"; margin: 0 auto; line-height: 1.5; text-align: center;}
     
-    #our_menu {width: 100%; height:870px; position: relative; z-index: 1; }
+    #our_menu {width: 100%; height:950px; position: relative; z-index: 1; }
      #our_menu h2 {color: rgb(240, 220, 223); font-size: 250px; text-align: left; font-family: "바탕"; padding: 15px 20px; letter-spacing: 40px; position: absolute; top: 60px; left:100px; } 
     .menu_box { width: 100%; height: 100%; position:absolute; top: 50px; left: 0; }
     
@@ -58,15 +58,17 @@
     #our_menu .menu_box img {width: 100%;  z-index: 10; }
     #our_menu .menu_box .mbox:first-child img {margin-top: 150px;}
   
-    #intro {width: 100%; height: 1000px;   background-color: greenyellow; position: relative;}
-    #intro p {width: 100%; height: 100px; position: absolute; top: 100px; text-align: center; font-size: 50px ; }
-    
-    #intro .container {background-color:#fdf2f2; width:1300px; height:600px; margin:0 auto;  display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;}
+    #intro {width: 100%; height: 850px; background-color:#ffffff; position: relative;}
+    #intro p {width: 100%; height: 100%; position: absolute; top: 50px; text-align: center; font-size: 50px ; padding: 10px;}
+    #intro .container {width: 1300px; height:550px; padding:20px; }  
+    #intro .container .box {float: left; width: 400px; height: auto;}
+    #intro .container .inbox img {max-width: 100%;}
+    #intro .container .inbox img:hover {opacity: 0.8;}
+    #intro .container .inbox h3 { font-size: 40px; text-align: center;}
+    #intro .container .inbox h5 {font-size: 10px ;text-align: center;  color: #666;}
+   .under {background-color:tomato; padding:1px; font-size:15px; color:#666; border:0; width:100px; text-align:center; margin:0 auto; }
+
    
-    #intro .container div {display:flex; width:400px; height:300px;  flex-wrap:wrap; flex-wrap:wrap; justify-content:space-between; align-items:center; align-content:space-between;}
-
-
-
     #package {width: 100%; height: 300px; background-color: gold; }
     
 
