@@ -58,15 +58,14 @@
     #our_menu .menu_box img {width: 100%;  z-index: 10; }
     #our_menu .menu_box .mbox:first-child img {margin-top: 150px;}
   
-    #intro {width: 100%; height: 850px; background-color:#ffffff; position: relative;}
-    #intro p {width: 100%; height: 100%; position: absolute; top: 50px; text-align: center; font-size: 50px ; padding: 10px;}
-    #intro .container {width: 1300px; height:550px; padding:20px; }  
-    #intro .container .box {float: left; width: 400px; height: auto;}
-    #intro .container .inbox img {max-width: 100%;}
-    #intro .container .inbox img:hover {opacity: 0.8;}
-    #intro .container .inbox h3 { font-size: 40px; text-align: center;}
-    #intro .container .inbox h5 {font-size: 10px ;text-align: center;  color: #666;}
-   .under {background-color:tomato; padding:1px; font-size:15px; color:#666; border:0; width:100px; text-align:center; margin:0 auto; }
+    #intro {width: 100%; height: 900px; background-color:#ffffff; margin: 220px auto; display: flex;flex-wrap: wrap;justify-content: center; }
+    #intro h3 {width: 100%;  text-align: center; font-size: 50px; padding: 30px; }
+    #intro .container {width: 1300px; height:550px; display: flex; flex-wrap: wrap; align-items: center;justify-content: space-around; border: none; }
+    #intro .container .inbox { width:30%;  height:75%; border: 1px solid #eee; padding: 3px;}
+    #intro .inbox h3 { width: 100%; text-align: center; font-size: 30px;  }
+    #intro .container .inbox p {width:100%; text-align: center;  color: #666; font-size: 20px;}
+    #intro .container .inbox img {width: 100px; height: 110px; margin: 10px 0px 5px 140px;   }
+    #intro .container .inbox .under {background-color:tomato; padding:10px; font-size:16px; color:#666; border:none; width:130px; height: 40px; text-align:center; margin: 20px auto; }
 
    
     #package {width: 100%; height: 300px; background-color: gold; }
