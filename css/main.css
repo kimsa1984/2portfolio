@@ -58,10 +58,10 @@
     #our_menu .menu_box img {width: 100%;  z-index: 10; }
     #our_menu .menu_box .mbox:first-child img {margin-top: 150px;}
   
-    #intro {width: 100%; height: 900px; background-color:#ffffff; margin: 220px auto; display: flex;flex-wrap: wrap;justify-content: center; }
-    #intro h3 {width: 100%;  text-align: center; font-size: 50px; padding: 30px; }
-    #intro .container {width: 1300px; height:550px; display: flex; flex-wrap: wrap; align-items: center;justify-content: space-around; border: none; }
-    #intro .container .inbox { width:30%;  height:75%; border: 1px solid #eee; padding: 3px;}
+    #intro {width: 100%; height: 700px; background-color:#ffffff; margin: 250px auto; display: flex;flex-wrap: wrap;justify-content: center; }
+    #intro h3 {width: 100%;  text-align: center; font-size: 50px; padding: 20px; }
+    #intro .container {width: 1300px; height:630px; display: flex; flex-wrap: wrap; align-items: center;justify-content: space-around; border: none; }
+    #intro .container .inbox { width:30%;  height:450px; border:none; padding: 3px;}
     #intro .inbox h3 { width: 100%; text-align: center; font-size: 30px;  }
     #intro .container .inbox p {width:100%; text-align: center;  color: #666; font-size: 20px;}
     #intro .container .inbox img {width: 100px; height: 110px; margin: 10px 0px 5px 140px;   }
@@ -71,8 +71,10 @@
     #intro .container .inbox .under:hover::after {width: 105px;}
    
     #package {width: 100%; height: 695px; background-color: gold; }
-    #package .container {width: 1300px; height: 695px;}
-    #package .container img {width: 100%; height: auto;}
+    #package .package_box {width: 100%; height: 200px; background-color: #fff; position: relative;  z-index: 10;}
+    #package .package_box img {width: 200px;height: 100px; position: absolute; z-index: 3;  }
+    #package .container {width: 1300px; height: 695px; }
+    #package .container img {width: 100%; height: auto; z-index: 3;}
 
     #offer {width: 100%; height: 500px; background-color: #f9fbfd; }
 
