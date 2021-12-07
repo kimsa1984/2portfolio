@@ -9,7 +9,8 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <!-- <script src="js/modal.js"></script>
+  <script src="js/header_fixed.js"></script> -->
 
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js">
   </script>
@@ -177,29 +178,104 @@
     </div>
 
     <div id="package">
-     <div class="pack_box"><img src="img/h1-deco-img-1.png" alt=""></div>
+      <div class="pack_deco">
+        <img src="img/h1-deco-img-1.png">
+      </div>
+    
+      <div class="container" style="background-image:url(img/h1-video-img-1.jpg);">
+        <div class="popup">
+          <video controls loop muted autoplay width=1300 height=600>
+            <source src="video/Prawn - 11659.mp4">
+          </video>
+          <button id="a">click</button>
+          <button id="cbtn">stop</button>
+      
+          </div>
+      
+          <script>
+            // $(function(){
+            //   $('#btn_play').click(function(){
+            //     var video = $('#my_video');
+            //     video.attr('src', 'video/Prawn - 11659.mp4');
+            //     video.get(0).play();
+            //   });
+            $(function () {
 
-     
+              $('#a').click(function () {
 
-      <div class="container">
+                $('.popup').css('display', 'block');
 
-        <img src="img/h1-video-img-1.jpg" alt="">
-        <video controls loop muted autoplay width=1300 height=500>
-          <source src="video/Prawn-11659.mp4">
-        </video>
-        <button type="button">click</button>
+              });
 
-        <div class="packbox">
-          
+              $('#cbtn').click(function () {
 
+                $('.popup').css('display', 'none');
+
+              });
+
+            });
+
+
+
+          </script>
+      
+      
         </div>
-
-        
+      
       </div>
 
+      <div id="offer">
+      <div class="middle_slider">
+        <ul class="mi_slide">
+          <li>
+            <p class="mi_text">“Risus ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus metus. Aliquam eleifend mi in nulla posuere sollicitu din aliquam ultrices sagittis orci a sceleri.”</p>
+            <h5>Jenna Johnson / Barista</h5>
+          </li>
+          <li>
+            <p class="mi_text">“Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augu.”</p>
+            <h5>Jenna Johnson / Barista</h5>
+          </li>
+          <li>
+            <p class="mi_text">“Lorem ip ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus metus. Aliquam eleifend mi in nulla posuere solli citudin aliquam ultrices sagittis orcil.”</p>
+            <h5>Jenna Johnson / Barista</h5>
+          </li>
       
+       </ul>
+ 
+ 
+       <span class="mi_prev">&lt;</span>
+ 
+       <span class="mi_next">&gt;</span>
+ 
+       <script>
 
-    </div>
+         $('.mi_prev').click(function () {
+
+           $('.mi_slide li:last').prependTo('.mi_slide');
+
+           $('.mi_slide').css('margin-left', -1300);
+
+           $('.mi_slide').stop().animate({ marginLeft: 0 }, 800)
+
+         });
+
+
+         $('.mi_next').click(function () {
+
+           $('.mi_slide').stop().animate({ marginLeft: -1300 }, 800, function () {
+
+             $('.mi_slide li:first').appendTo('.mi_slide');
+
+             $('.mi_slide').css({ marginLeft: 0 });
+
+           });
+
+         });
+
+       </script>
+       </div>
+
+       </div>
 
     <footer>
       <div class="container"></div>
