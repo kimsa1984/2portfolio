@@ -83,6 +83,14 @@
     #offer {width: 100%; height: 500px; background-color: pink;}
     #offer .container{width: 1300px; height:100%; }
     #offer .container img {width:150px; height: 100px; margin: 0px 50% 30px;}
+    
+
+    .mi_slide {width: 3000px; }
+
+    .mi_slide {width: 1000px; height: 350px; margin: 0 auto;}
+
+    /* .mi_slide li p{width: 100%; height: 100%;} */
+
     #offer >li {width: 3000px; height: 500px; font-size: 25px;
       float: left;}
     #offer p{ width:1000px; margin: 0 auto; font-size: 30px; font-family: "바탕"; text-align: center; margin-top: 40px; line-height: 50px;}
