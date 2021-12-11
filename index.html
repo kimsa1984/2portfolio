@@ -222,65 +222,57 @@
       <div class="container">
         <img src="img/h1-deco-img-2.png">
     
-        <ul class="mi_slide">
-          <li>
-          <li>
-            <div>
+           <div class="divbox1">
             <p>“Lorem ip ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus
               metus. Aliquam eleifend mi in nulla posuere solli citudin aliquam ultrices sagittis orcil.”</p>
             <h5>Jenna Johnson / Barista</h5>
-            </div>
-          </li>
-    
-          <li>
-            <div>
+          </div>
+          
+          <div class="divbox2">
             <p>“Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris
               pharetra et. Non tellus orci ac auctor augu.”</p>
             <h5>Jenna Johnson / Barista</h5>
-            </div>
-          </li>
-    
-          <li>
-            <div>
+          </div>
+         
+          <div class="divbox3">
             <p>“Lorem ip ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus
               metus. Aliquam eleifend mi in nulla posuere solli citudin aliquam ultrices sagittis orcil.”</p>
             <h5>Jenna Johnson / Barista</h5>
-            텍스트슬라이드 잘안됨.! ㅠㅠ
-            </div>
-          </li>
-        </ul>
+          </div>
+
         <span class="mi_prev">&lt;</span>
         <span class="mi_next">&gt;</span>
+
         <script>
-          function prev() {
-            $('.mi_slide li:last').prependTo('.mi_slide');
-            $('.mi_slide').css('margin-left', -1300);
-            $('.mi_slide').stop().animate({ marginLeft: 0 }, 1000);
+          var i=0;
+          function divbox(){
+            i++;
+            if(i>$('.divbox').index()){
+              i=0;
+            }
+            $('.divbox').eq(i).stop().fadeIn('slow');
+            $('.divbox').eq(i-1).stop().fadeOut();
           }
+          setInterval('.divbox',2000);
 
-          function next() {
-            $('.mi_slide').stop().animate({ marginLeft: -1300 }, function () {
-              $('.mi_slide li:first').appendTo('.mi_slide');
-              $('.mi_slide').css({ marginLeft: 0 });
+          $(function(){
+            $(".mi_prev").on("click",function(){
+              $(".divbox1").fadeIn();
             });
-          }
-
-          function slide() {
-            $('.mi_slide').stop().animate({ marginLeft: -1300 }, function () {
-              $('.mi_slide li:first').appendTo('.mi_slide');
-              $('.mi_slide').css({ marginLeft: 0 });
-            });
-          }
-
-          setInterval(slide, 3000);
-
-          $('.mi_prev').click(function () {
-            prev();
           });
 
-          $('.mi_next').click(function () {
-            next();
-          });
+          // $(function(){
+          //   $('.mi_prev').on("click",function(){
+          //     $('.divbox').fadeIn("slow");
+          //   });
+          //   $('.mi_prev').on("click",function(){
+          //     $('.divbox').fadeTo(1000,0.2);
+          //   });
+          //   $('.mi_prev').on("click",function(){
+          //     $('.divbox').fadeOut(900);
+          //   });
+          // });
+
         </script>
       </div>
     </div>
@@ -288,13 +280,11 @@
     <div id="booking">
     
       <div class="book">
-        <h2>MAKE A RESERVATION</h2>
+        <p>MAKE A RESERVATION</p>
         <input type="text" name="f_name" class="name" placeholder="FIRST NAME">
         <input type="text" name="l_name" class="name" placeholder="LAST NAME">
         <input type="date" onfocus="(this.type='date')" name="date" class="book" placeholder="Date">
-        <i class="far fa-calendar"></i>
         <input type="text" onfocus="(this.type='time')" name="time" class="book" placeholder="Time">
-        <i class="far fa-clock"></i>
         <input type="tel" name="phone" class="book" placeholder="Phone">
         <textarea name="message" class="memo" placeholder="Message"></textarea>
         <button>Appointment</button>
