@@ -123,7 +123,8 @@
     /* footer .foottext .footbox {width: 30%; font-size: 18px;  } */
     footer .foottext img { width:250px; margin: 0px 0 10px 5px; }
     #footbottom {width: 100%; height: auto;  text-align: center; font-size: 14px;color: #a4a4a4; display: inline; margin: 3%;}
-    
+    footer .footer_icons { isplay: flex; }
+    footer .footer_icons a { font-size: 24px;  padding: 8px 20px;  }
 
     
 
