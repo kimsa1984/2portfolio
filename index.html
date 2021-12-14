@@ -218,68 +218,75 @@
       });
 
     </script>
+
     <div id="offer">
       <div class="container">
         <img src="img/h1-deco-img-2.png">
-<ul class="divslide">
-<li>
+    
+        <ul class="divslide">
+          <li>
+            <div class="divbox">
+              <h5>“Lorem ip ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus
+                metus. Aliquam eleifend mi in nulla posuere solli citudin aliquam ultrices sagittis orcil.”</h5>
+              <h5>Jenna Johnson / Barista</h5>
+            </div>
 
-  <h5>“Lorem ip ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus
-    metus. Aliquam eleifend mi in nulla posuere solli citudin aliquam ultrices sagittis orcil.”</h5>
-  <h5>Jenna Johnson / Barista</h5>
-
-</li>
-
-<li>
-
-  <h5>“Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris
-    pharetra et. Non tellus orci ac auctor augu.”</h5>
-  <h5>Jenna Johnson / Barista</h5>
-
-</li>
-<li>
-<div class="divbox">
-  <h5>“Lorem ip ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus
-    metus. Aliquam eleifend mi in nulla posuere solli citudin aliquam ultrices sagittis orcil.”</h5>
-  <h5>Jenna Johnson / Barista</h5>
-</div>
-</li>
-
-</ul>
+          <li>
+            <div class="divbox">
+              <h5>“Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris
+                pharetra et. Non tellus orci ac auctor augu.”</h5>
+              <h5>Jenna Johnson / Barista</h5>
+            </div>
         
-<!-- 
+          </li>
+          <li>
+            <div class="divbox">
+              <h5>“Lorem ip ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus
+                metus. Aliquam eleifend mi in nulla posuere solli citudin aliquam ultrices sagittis orcil.”</h5>
+              <h5>Jenna Johnson / Barista</h5>
+            </div>
+          </li>
+        
+          </li>
+        </ul>
+    
+    
         <span class="mi_prev">&lt;</span>
-        <span class="mi_next">&gt;</span> -->
-
+        <span class="mi_next">&gt;</span>
+    
         <script>
-          var i = 0;
+
           function divbox() {
+
             i++;
-            if (i > $('.divbox1').index()) {
+            if (i > $('.divslide li:last').index()) {
               i = 0;
             }
-            $('.divbox1').eq(i).stop().fadeIn('slow');
-            $('.divbox1').eq(i - 1).stop().fadeOut();
+
+            $('.divslide li').eq(i).stop().fadeIn('slow');
+            $('.divslide li').eq(i - 1).stop().fadeOut();
+
           }
-          setInterval('.divbox1', 2000);
+
+          setInterval(divbox, 3000);
 
           $(function () {
             $(".mi_prev").on("click", function () {
-              $(".divbox1").fadeIn();
+              $(".divbox").fadeIn();
             });
           });
 
-          // $(function(){
-          //   $('.mi_prev').on("click",function(){
-          //     $('.divbox').fadeIn("slow");
-          //   });
-          //   $('.mi_prev').on("click",function(){
-          //     $('.divbox').fadeTo(1000,0.2);
-          //   });
-          //   $('.mi_prev').on("click",function(){
-          //     $('.divbox').fadeOut(900);
-          //   });
-          // });
+                  // $(function(){
+                  //   $('.mi_prev').on("click",function(){
+                  //     $('.divbox').fadeIn("slow");
+                  //   });
+                  //   $('.mi_prev').on("click",function(){
+                  //     $('.divbox').fadeTo(1000,0.2);
+                  //   });
+                  //   $('.mi_prev').on("click",function(){
+                  //     $('.divbox').fadeOut(900);
+                  //   });
+                  // });
 
         </script>
       </div>
@@ -337,18 +344,21 @@
 
     <footer>
       <div class="foottext">
-        <h5>Contact Us</h5>
+        <div class="footbox">
+          <h5>Contact Us</h5>
+          <p>9 W 53rd St, New York,<br>
+          NY 10019, USA</p>
         <p><a href="tel:123456789" target="_blank" rel="noopener">+1 212-344-1230</a><br>
           <a href="tel:123456789" target="_blank" rel="noopener">+1 212-555-1230</a>
         </p>
-      </div>
-    
-      <div class="foottext">
+        </div>
+        
+        <div class="footbox">
         <img src="img/logo_kims.png" width="130" height="60">
-        <img src="img/p-deco-img-2.png" width="50" height="95">
         <h5>Chef’s kiss for restaurants and cafés. Drew, the most important ingredient for your site.</h5>
-      </div>
-      <div class="foottext">
+        </div>
+        
+      <div class="footbox">
         <h5>Working Hours</h5>
         <p>
           Monday-Friday:
@@ -357,11 +367,13 @@
          <p> Saturday-Sunday:
           10:00-16:00
         </p>
-    
+      
+        
+       
       </div>
-    
-    
+      <p id="footbottom">© 2021 Qode Interactive, All Rights Reserved</p>
     </footer>
+
   </div>
 
 </body>
