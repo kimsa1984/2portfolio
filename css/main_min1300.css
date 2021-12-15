@@ -36,9 +36,10 @@
     .slide {width: 3900px; position: relative; ;background-size: cover;}
     .slide li {width: 1300px; height: 612px; float: left;}
     .slide li img {width: 100%; height: 100%; }
-    .slide h1 {box-sizing: border-box; font-size: 50px;}
-    #slider button {width: 300px; height: 60px; display: block; background-color: black; color: #fff; margin: 0 auto; border-radius: 20px; border:none; opacity: 0.8;}
-    #slider button:hover { cursor:pointer; background-color:#fff; color:#000; }
+    .slide li .slidetext{width: 500px; height:300px; margin: 20px; position: absolute; z-index:10; top: 250px; left: 370px;}
+    .slide h1 {border: 1px solid #fff; font-size: 50px;}
+    #slider button {width:200px; height: 70px; display: block; background-color: #fff; color: #333; margin: 0 auto;  border:none; opacity: 0.8;}
+    #slider button:hover { cursor:pointer; background-color:#000; color: #fff; }
     span {position: absolute; top:300px; display: block; font-size: 38px; color:#fff; line-height: 40px;  background: rgba(0,0,0,0.6); cursor: pointer; height: 50px; transform: translateY(-50%); }
 
     span:hover {background: rgba(255,255,255,0.8); color:#000;}
