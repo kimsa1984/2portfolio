@@ -8,7 +8,9 @@
   <title>ksa 2portfolio</title>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
-  <link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/main_max599.css">
+  <link rel="stylesheet" href="css/main_min600.css">
+  <link rel="stylesheet" href="css/main_min1300.css">
   <!-- <script src="js/modal.js"></script>
   <script src="js/header_fixed.js"></script> -->
 
@@ -199,7 +201,7 @@
       <iframe src="https://www.youtube.com/embed/NA9z8atd8F4?autoplay=1&amp;mute=1" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
-      <!-- <iframe src="https://player.vimeo.com/video/243443906?h=58aabcda1d?autoplay=1&amp;mute=1​" width="900px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
+     
 
       <button id="b">stop</button>
     </div>
@@ -222,74 +224,64 @@
     <div id="offer">
       <div class="container">
         <img src="img/h1-deco-img-2.png">
-    
-        <ul class="divslide">
-          <li>
-            <div class="divbox">
-              <h5>“Lorem ip ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus
-                metus. Aliquam eleifend mi in nulla posuere solli citudin aliquam ultrices sagittis orcil.”</h5>
-              <h5>Jenna Johnson / Barista</h5>
-            </div>
 
-          <li>
-            <div class="divbox">
-              <h5>“Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris
-                pharetra et. Non tellus orci ac auctor augu.”</h5>
-              <h5>Jenna Johnson / Barista</h5>
-            </div>
-        
-          </li>
-          <li>
-            <div class="divbox">
-              <h5>“Lorem ip ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus
-                metus. Aliquam eleifend mi in nulla posuere solli citudin aliquam ultrices sagittis orcil.”</h5>
-              <h5>Jenna Johnson / Barista</h5>
-            </div>
-          </li>
-        
-          </li>
-        </ul>
+        <div class="slideshow-container">
+          
+          <div class="mySlides fade">
+            <p class="fade">
+              “Lorem ip ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus
+              metus. Aliquam eleifend mi in nulla posuere solli citudin aliquam ultrices sagittis orcil.”</p>
+            <h5>Jenna Johnson / Barista</h5>
+          </div>
+
+          <div class="mySlides fade">
+            <p class="fade">
+              “Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris
+              pharetra et. Non tellus orci ac auctor augu.”</p>
+            <h5>Mike Brandn / Chef</h5>
+          </div>
     
-    
+          <div class="mySlides fade">
+            <p class="fade">
+              “Lorem ip ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus
+              metus. Aliquam eleifend mi in nulla posuere solli citudin aliquam ultrices sagittis orcil.”</p>
+            <h5>Edward Christopher / journalist</h5>
+          </div>
+
+        </div>
+<!-- 
         <span class="mi_prev">&lt;</span>
         <span class="mi_next">&gt;</span>
-    
+     -->
         <script>
 
-          function divbox() {
+          var slideIndex = 0;
 
-            i++;
-            if (i > $('.divslide li:last').index()) {
-              i = 0;
+          showSlides();
+
+          function showSlides() {
+            var i;
+
+            var slides = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < slides.length; i++) {
+
+              slides[i].style.display = "none";
+
             }
 
-            $('.divslide li').eq(i).stop().fadeIn('slow');
-            $('.divslide li').eq(i - 1).stop().fadeOut();
+            slideIndex++;
+
+            if (slideIndex > slides.length) { slideIndex = 1 }
+
+            slides[slideIndex - 1].style.display = "block";
+
+            setTimeout(showSlides, 3000);
 
           }
 
-          setInterval(divbox, 3000);
-
-          $(function () {
-            $(".mi_prev").on("click", function () {
-              $(".divbox").fadeIn();
-            });
-          });
-
-                  // $(function(){
-                  //   $('.mi_prev').on("click",function(){
-                  //     $('.divbox').fadeIn("slow");
-                  //   });
-                  //   $('.mi_prev').on("click",function(){
-                  //     $('.divbox').fadeTo(1000,0.2);
-                  //   });
-                  //   $('.mi_prev').on("click",function(){
-                  //     $('.divbox').fadeOut(900);
-                  //   });
-                  // });
-
         </script>
-      </div>
+        </div>
     </div>
 
     <div id="booking">
@@ -298,9 +290,9 @@
         <h2>MAKE A RESERVATION</h2>
         <input type="text" name="f_name" class="name" placeholder="FIRST NAME">
         <input type="text" name="l_name" class="name" placeholder="LAST NAME">
-        <input type="date" onfocus="(this.type='date')" name="date" class="book" placeholder="Date">
-        <input type="text" onfocus="(this.type='time')" name="time" class="book" placeholder="Time">
-        <input type="tel" name="phone" class="book" placeholder="Phone">
+        <input type="date" onfocus="(this.type='date')" name="date" placeholder="Date">
+        <input type="text" onfocus="(this.type='time')" name="time" placeholder="Time">
+        <input type="tel" name="phone"placeholder="Phone">
         <textarea name="message" class="memo" placeholder="Message"></textarea>
         <button>Appointment</button>
       </div>
@@ -331,14 +323,34 @@
     </div>
 
     <div id="iconbar">
-     <img src="img/h1-client-img-1-hover.png" alt="">
-      
-      <img src="img/h1-client-img-2-hover.png" alt="">
-      <img src="img/h1-client-img-3-hover.png" alt="">
-      <img src="img/h1-client-img-4-hover.png" alt="">
-      <img src="img/h1-client-img-5-hover.png" alt="">
-      <img src="img/h1-client-img-6-hover.png" alt="">
+        <div class="iconwrap">
 
+          <div class="iconlogo">
+            <img width="195" height="99" src="img/h1-client-img-1-hover.png" alt="">
+          </div>
+    
+         <div class="iconlogo">
+           <img width="195" height="99" src="img/h1-client-img-2-hover.png" alt="">
+         </div>
+          
+          <div class="iconlogo">
+            <img width="195" height="99" src="img/h1-client-img-3-hover.png" alt="">
+          </div>
+    
+          <div class="iconlogo">
+            <img width="195" height="99" src="img/h1-client-img-4-hover.png" alt="">
+          </div>
+    
+          <div class="iconlogo">
+            <img width="195" height="99" src="img/h1-client-img-5-hover.png" alt="">
+          </div>
+    
+          <div class="iconlogo">
+            <img width="195" height="99" src="img/h1-client-img-6-hover.png" alt="">
+          </div>
+
+        </div>
+      
     </div>
 
 
@@ -358,12 +370,7 @@
         <h5>Chef’s kiss for restaurants and cafés. Drew, the most important ingredient for your site.</h5>
         </div>
 
-        <div class="footer_icons">
-          <a href="#" class="bi bi-youtube"></a>
-          <a href="#" class="bi bi-twitter"></a>
-          <a href="#" class="bi bi-facebook"></a>
-          <a href="#" class="bi bi-instagram"></a>
-        </div>
+        
 
       <div class="footbox">
         <h5>Working Hours</h5>
