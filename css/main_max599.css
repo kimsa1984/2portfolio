@@ -7,13 +7,17 @@
 
 @media (max-width:599px){ 
 
-    #wrap {width: 100%; background-color: rgb(247, 234, 236); }
+    #wrap {width: 100%; background-color: rgb(247, 234, 236);position: relative;  }
+    .top-img .top1 {position: absolute; z-index: 5; top: 3%; left: -4.8%;}
+    .top-img2 .top2 {position: absolute; z-index: 6; top: 8%; right: -4.5%;}
+
     /* 주요 컨텐츠 사이즈 */
     .container {width: 1300px; height: 100%; margin: 0 auto; border: 1px solid orange;}
 
 
     header {width: 100%; height:120px; }  
     header .container {display: flex; justify-content: space-between;} 
+     
     
     .search_box {width: 200px ; height: 120px; display: flex; justify-content: left; align-items: center; flex-wrap: nowrap;}
     .search_box i {padding:0 5px; font-size: 17px;}
@@ -23,27 +27,30 @@
   
     .left_menu {display:flex; align-items: center; justify-content: space-between; }
     .left_menu li{display: block; color: #faecf8; padding: 15px;}
-    .left_menu li:hover { border-radius: 4px; background-color: rgb(245, 227, 157);}
+    .left_menu li:hover { border-radius: 4px; }
     
     .right_menu {display: flex; align-items: center; justify-content: space-between; }
     .right_menu li{display: block;  color: #faecf8; padding:15px;}
-    .right_menu li:hover { border-radius: 4px; background-color: rgb(245, 227, 157);}
+    .right_menu li:hover { border-radius: 4px; }
 
     .menu_icon {width: 90px; height: 120px; display: flex; justify-content:right; align-items: center; }
     .menu_icon i {cursor: pointer; font-size: 25px;}
         
     #slider {width:1300px; height:612px; margin: 0 auto; background-color: #ddd;position: relative; overflow: hidden; }
+     
     .slide {width: 3900px; position: relative; ;background-size: cover;}
     .slide li {width: 1300px; height: 612px; float: left;}
     .slide li img {width: 100%; height: 100%; }
-    .slide h1 {box-sizing: border-box; font-size: 50px;}
-    #slider button {width: 300px; height: 60px; display: block; background-color: black; color: #fff; margin: 0 auto; border-radius: 20px; border:none; opacity: 0.8;}
-    #slider button:hover { cursor:pointer; background-color:#fff; color:#000; }
+    .slide li .slidetext{margin: 20px; position: absolute; z-index:10; top:240px; left: 300px;}
+    .slide h1 { font-size: 80px; margin-top: -50px; color: #fff;
+        margin-bottom: 20px; }
+    #slider button {width:200px; height: 70px; display: block; background-color: #fff; color: #fff; margin: 0 auto;  border:none; font-weight: bold; }
+    #slider button:hover { cursor:pointer; background-color:rgb(255, 255, 180); color:#fff; }
     span {position: absolute; top:300px; display: block; font-size: 38px; color:#fff; line-height: 40px;  background: rgba(0,0,0,0.6); cursor: pointer; height: 50px; transform: translateY(-50%); }
-
     span:hover {background: rgba(255,255,255,0.8); color:#000;}
     .prev {left:0; border-radius: 0 10px 10px 0px; padding: 0 8px 0 2px; }
     .next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}
+    
   
     #enjoy {width:100%; height: 400px; padding-top: 100px;  }
     .container {border: none;}
