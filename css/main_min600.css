@@ -1,10 +1,3 @@
-@charset "utf-8";
-
-
-* {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Open Sans',sans-serif; }
-    ul,ol,li {list-style: none; margin: 0; padding: 0;}
-    a {text-decoration: none; color: #333;}
-
 @media (min-width:600px) and (max-width:1299px){ 
 
     #wrap {width: 100%; background-color: rgb(247, 234, 236);position: relative;  }
@@ -13,28 +6,7 @@
 
     /* 주요 컨텐츠 사이즈 */
     .container {width: 100%; height: 100%; margin: 0 auto; border: 1px solid orange;}
-
-
-    header {width: 100%; height:120px; display: flex; justify-content: space-around; align-items: center; }  
-    header .container {display: flex; border: none; } 
-    header .container .top_logo img {max-width: 80%; margin: 30px auto; } 
-    
-    .search_box {width:9%; height: 120px; display: flex; justify-content: start;  align-items: center;flex-wrap:nowrap;  }
-    .search_box i {padding:0 5px; font-size: 15px;}
-    
-    .nav {width:300px; height: 100%;display: flex; justify-content: space-around; align-items: center; }
-  
-    .left_menu {display:flex; align-items: center; justify-content: center; }
-    .left_menu li{display: block; color: #faecf8; padding: 15px;}
-    .left_menu li:hover { border-radius: 4px; }
-    
-    .right_menu {display: flex; align-items: center; justify-content: left; }
-    .right_menu li{display: block;  color: #faecf8; padding:15px;}
-    .right_menu li:hover { border-radius: 4px; }
-
-    .menu_icon {width:10px; height: 120px; display: flex; justify-content:right; align-items: center; }
-    .menu_icon i {cursor: pointer; font-size: 25px;}
-        
+   
     #slider {width:100%; height:612px; margin: 0 auto; background-color: #ddd;position: relative; overflow: hidden; }
      
     .slide {width: 300vw; position: relative; ;background-size: cover;}
@@ -150,13 +122,5 @@
     #iconbar .iconwrap .iconlogo {width: 80%; }
     #iconbar .iconlogo:hover img {cursor: pointer; opacity: 0.5;}
     .iconwrap img {width: 95%; height: auto;}
-
-    footer { width: 100%; height: 600px; padding-bottom: 10px; padding-top: 100px;}
-    footer .foottext {width: 100%; height:100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;  }
-    footer .foottext h5,footer .foottext a { width: 350px; font-size:20px;  padding: 1%; margin: 1%; text-align: center; line-height: 30px;}
-    footer .foottext p { width: 350px; font-size:18px;   text-align: center; }
-    /* footer .foottext .footbox {width: 30%; font-size: 18px;  } */
-    footer .foottext img { width:350px; margin: 0px 0 10px 5px; }
-    #footbottom {width: 100%; height: auto;  text-align: center; font-size: 14px;color: #a4a4a4; display: inline; margin: 3%;}
    
 }
