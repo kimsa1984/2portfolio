@@ -87,11 +87,12 @@
     .next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}
     
   
-    #enjoy {width:100%; height:650px; padding-top: 100px;  }
+    #enjoy {width:100%; height:580px; padding-top: 100px;  }
+
     .container {border: none;}
     .container .enjoy_box{width: 137px; height: 90px;  margin: 0 auto; }
     .enjoy_box img {width: 100%; height: 100%;}
-    .container h3 {width: 100% ;  font-size: 40px;  font-family: "바탕"; margin: 0 auto; line-height: 1.5; text-align: center;}
+    .container h3 {width: 100% ;  font-size: 30px;  font-family: "바탕"; margin: 0 auto; line-height: 1.5; text-align: center; padding: 20px;}
     
     #our_menu {width: 100%; height: 1900px; display: flex; flex-flow: column wrap-reverse; align-content: center; margin: 0; justify-content: space-between;}
      #our_menu h2 {display: none; } 
@@ -174,15 +175,15 @@
      #booking button {width: 40%; height: 60px; background-color: #fff;  cursor: pointer; font-size: 16px;}
      #booking button:hover {background-color: pink; color: #333; }
 
-    .insta {width: 100%; height: 1200px; background-color:#ffffff; padding-top: 20px; position: relative;}
+    .insta {width: 100%; height: 1400px; background-color:#ffffff; padding-top: 20px; position: relative;}
     .insta .intext h2{ width: 100%; height: 65px; text-align: center; font-size: 30px;   }
     .insta .imgbox {width:80%; height:300px; float: left;margin: 10px 45px 10px;  } 
     .insta .imgbox img {width: 100%; height: 100%; transition: 0.5s all ease-in-out; cursor: pointer; }
 	.insta .imgbox:hover img {transform: scale(1.2); transition: 0.5s all ease-in-out;}
 
-    #iconbar {width: 100%; height:850px; background-color:#ffffff;  }
-    #iconbar .iconwrap {width: 100%; height: 100%; display: flex; flex-direction:  column; align-items: center; padding-right:35%; padding-top: 4%;}
-    #iconbar .iconwrap .iconlogo {width: 20%; }
+    #iconbar {width: 100%; height:800px; background-color:#ffffff;  }
+    #iconbar .iconwrap {width: 100%; height: 100%; display: flex; flex-direction:  column;justify-content:space-evenly; align-items: center;  }
+    #iconbar .iconwrap .iconlogo {width: 100%; display: flex; justify-content: center; align-items: center; }
     #iconbar .iconlogo:hover img {cursor: pointer; opacity: 0.5;}
 
 }

@@ -18,6 +18,33 @@
 
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js">
   </script>
+
+  
+    <script>
+      //nav 토글 클릭시
+      $(function () {
+        $('.menu_icon').click(function () {
+          $('.nav left_menu').stop().slideToggle();
+        });
+      });
+
+       $(window).resize(function () {
+       if(window.innerWidth>600) {
+          $('.nav left_menu').hide();
+         }
+        });
+
+
+                    // $(function(){
+                    //   $('ul').mouseover(function(){
+                    //     $(this).children('li').stop().slideDown(); })
+                    //     mouseout(function(){
+                    //       $('li').stop().slideUp();
+                    //     });
+                    // });
+    </script>
+
+
 </head>
 
 
@@ -59,12 +86,9 @@
           <i class="fas fa-bars"></i>
         </div>
 
-
       </div>
-        
 
     </header>
-
 
 
     <div id="slider">

@@ -27,7 +27,7 @@
     #enjoy .container {border: none; display: flex; justify-content: center; flex-direction: column; width: 100%;}
     .container .enjoy_box{width: 137px; height: 90px; display: flex; justify-self: center; align-self: center; }
     .enjoy_box img {width: 100%; height: 100%;}
-    .container h3 {width: 100% ;  font-size: 30px;  font-family: "바탕"; line-height: 1.5; text-align: center;}
+    .container h3 {width: 100% ;  font-size: 35px;  font-family: "바탕"; line-height: 1.5; text-align: center; padding: 15px;}
     
     #our_menu {width: 100%; height:700px; position: relative; z-index: 1; }
      #our_menu h2 {color: rgb(240, 220, 223); font-size: 160px; text-align: left; font-family: "바탕"; padding: 1%; letter-spacing: 40px; position: absolute; top: 80px;  } 
@@ -79,7 +79,7 @@
     #offer .container h5{font-size: 20px; text-align: center;margin-top: 50px; width: 100%; color: rgb(15, 165, 170); line-height: 40px; letter-spacing: 2px;}
     .mySlides {display: none;}
     /* Slideshow container */
-    .slideshow-container {max-width: 100%; position: relative; margin: auto;}
+    .slideshow-container {max-width: 100%; position: relative; margin: auto; padding: 30px;}
 
     /* Fading animation */
     .fade {animation-name: fade; animation-duration: 1.5s;}
