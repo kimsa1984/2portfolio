@@ -32,8 +32,8 @@
     footer { width: 100%; height: 900px; padding-bottom: 10px; padding-top: 10px;}
     footer .foottext {width: 100%; height:100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;  }
     footer .foottext h5,footer .foottext a { width: 350px; font-size:20px;  padding: 1%; margin: 1%; text-align: center; line-height: 30px;}
-    footer .foottext p { width: 350px; font-size:18px;   text-align: center; }
-    footer .foottext img { width:350px; margin: 0px 0 10px 5px; }
+    footer .foottext p { width: 100%; font-size:18px;   text-align: center; }
+    footer .foottext img { width:100%; margin: 0px 0 10px 5px; }
     #footbottom {width: 100%; height: auto;  text-align: center; font-size: 14px;color: #a4a4a4; display: inline; margin: 3%;}
    
 }
