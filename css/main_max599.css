@@ -38,7 +38,7 @@
             position: relative;
     }
     .slide li img {
-            width: 100%; 
+            width: 100vw; 
             height: 100%;
     }
     .slide li .slidetext{
@@ -87,19 +87,19 @@
     .next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}
     
   
-    #enjoy {width:100%; height:580px; padding-top: 100px;  }
+    #enjoy {width:100%; height:400px; padding-top: 100px;  }
 
     .container {border: none;}
     .container .enjoy_box{width: 137px; height: 90px;  margin: 0 auto; }
     .enjoy_box img {width: 100%; height: 100%;}
     .container h3 {width: 100% ;  font-size: 25px;  font-family: "바탕"; margin: 0 auto; line-height: 1.5; text-align: center; padding: 20px;}
     
-    #our_menu {width: 100%; height: 2000px; display: flex; flex-flow: column wrap-reverse; align-content: center; margin: 0; justify-content: space-between;}
+    #our_menu {width: 100%; height: 2200px; display: flex; flex-flow: column wrap-reverse; align-content: center; margin: 0; justify-content: center;}
      #our_menu h2 {display: none; } 
-    .menu_box { width: 100%; height: auto; }
+    .menu_box { width: 100%; }
     
-    .menu_box p {width:450px; text-align: center; font-size: 30px;  }
-    .menu_box li {width:450px; font-size: 25px;  line-height: 35px; text-align: center; padding: 10px;}
+    .menu_box p {width:100vw; text-align: center; font-size: 30px; }
+    .menu_box li {width:100vw; font-size: 25px;  text-align: center; padding: 10px;}
     #our_menu .menu_box .mbox { width: 33%; height: auto; display: flex; flex-direction: column; justify-content: start;}
     /* #our_menu .menu_box img {width:100vw;  z-index: 10; } */
     #our_menu .menu_box .mbox:first-child img {width: 97vw;display: flex; justify-items: start; }
@@ -118,12 +118,12 @@
    
   
     #intro {width: 100%; height:1400px; background-color:#ffffff;margin-top:20px; }
-    #intro h3 {width: 100%;  text-align: center; font-size: 30px; padding: 10px; }
+    #intro h3 {width: 100%;  height: 70px; text-align: center; font-size: 30px; padding-top: 15px; }
     #intro .container {width: 100%; height:auto; display: flex; flex-wrap: wrap; align-items: center; flex-direction: column;border: none; }
     #intro .container .inbox { width:100%;  height:400px; border:none; line-height: 30px;}
     #intro .inbox h3 { width: 100%; text-align: center; font-size: 30px;  }
     #intro .container .inbox p {width:100%; text-align: center;  color: #666; font-size: 22px; line-height: 40px;}
-    #intro .container .inbox img {width: 110px; height:100px; margin: 0px 0px 0px 175px;   }
+    #intro .container .inbox img {width: 110px; height:100px; margin: 0px 0px 0px 40%;   }
     #intro .container .inbox .under {padding:10px; font-size:16px; color:#666; border:none; width:130px; height: 40px; text-align:center; margin: 20px auto; }
     
     #intro .container .inbox .under::after {position: absolute; content:""; display: block; border-bottom: 3px solid #000; transition: width 100px ease-in-out; left: auto; width: 0;} 
@@ -138,10 +138,10 @@
     .popup { width: 100%; height: 100%; position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); background: rgba(0,0,0,0.8); display: none; z-index: 5;}
     .popup iframe{width: 900px; height: 500px; position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); }
 
-    #offer {width: 100%; height:450x; margin-top: 30px; }
+    #offer {width: 100%; height:470px; margin-top: 30px; }
     #offer .container{width:100%; height:100%; position: relative; border: none;}
     #offer .container img {width:150px; height: 100px; margin: 0px 35% 0px;}
-    #offer .container .fade{font-size: 20px; text-align: center; width: 100%; color: rgb(15, 165, 170); line-height: 40px; letter-spacing: 2px; margin-top: 5px;}
+    #offer .container .fade{font-size: 20px; text-align: center; width: 100%; color: rgb(15, 165, 170); line-height: 40px; letter-spacing: 2px; margin-top: 20px;}
     #offer .container h5{font-size: 16px; text-align: center;margin-top: 5px; width: 100%; color: rgb(15, 165, 170); line-height: 40px; letter-spacing: 2px;}
     .mySlides {display: none;}
     /* Slideshow container */
