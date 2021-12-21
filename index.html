@@ -63,11 +63,18 @@
           <i class="fas fa-bars"></i>
         </div>
         <script>
-          //nav 토글 클릭시
+          //nav 햄버거 메뉴
           $(function () {
-            $('.menu_icon').click(function () {
-              $('.nav left_menu').stop().slideToggle();
+            $(".menu_icon").click(function () {
+              $(".nav left_menu").stop().slideToggle();
             })
+          });
+
+          $(window).resize(function(){
+            if(window.innerWidth>=599){
+              $('.nav left_menu').show();
+              $('.nav right_menu').hide();
+            }
           });
 
 
