@@ -15,15 +15,15 @@
     .search_box {display: none;}
     .search_box i {display: none;}
     
-    .nav {width:100% }
+    .nav {width:100% ;}
     
     .left_menu {width:100%; display: flex; align-items: center; justify-content: space-evenly; flex-direction: column;}
-    .left_menu li{  color: #faecf8; display: flex; justify-content: center; align-items: center; width: 100vw;}
+    .left_menu li{  color: #faecf8; display: flex; justify-content: center; align-items: center; width: 50vw;}
     .left_menu li:hover { border-radius: 4px; background-color: #fff; }
     
-    .right_menu {display: none;}
-    .right_menu li{ display: none;}
-    .right_menu li:hover { border-radius: 4px; }
+    .right_menu {width:100%; display: flex; align-items: center; justify-content: space-evenly; flex-direction: column;}
+    .right_menu li{ color: #faecf8; display: flex; justify-content: center; align-items: center; width: 50vw; }
+    .right_menu li:hover { border-radius: 4px; background-color: #fff;}
 
     .menu_icon {width: 90px; height: 120px; display: flex; justify-content:right; align-items: center; }
     .menu_icon i {cursor: pointer; font-size: 25px;}

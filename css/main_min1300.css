@@ -110,9 +110,9 @@
      #booking button {width: 40%; height: 60px; background-color: #fff;  cursor: pointer; font-size: 16px;}
      #booking button:hover {background-color: pink; color: #333; }
 
-    .insta {width: 100%; height: 500px; background-color:#ffffff; padding-top: 50px; }
+    .insta {width: 100%; height: 500px; background-color:#ffffff; padding-top: 20px; }
     .insta .intext h2{ width: 100%; height: 100px; text-align: center; font-size: 40px; position: relative;  }
-    .insta .imgbox {width: 20%; height:300px; float: left; margin-left: 70px;  } 
+    .insta .imgbox {width:18%; height:300px; float: left; margin-left: 70px;  } 
     .insta .imgbox img {width: 100%; height: 100%; transition: 0.5s all ease-in-out; cursor: pointer; }
 	.insta .imgbox:hover img {transform: scale(1.2); transition: 0.5s all ease-in-out;}
 
