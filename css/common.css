@@ -15,10 +15,10 @@
     .search_box {display: none;}
     .search_box i {display: none;}
     
-    .nav {width:100%; height: auto; display: flex; justify-content: space-between; align-items: center; }
+    .nav {width:100%;  }
     
     .left_menu {display:none; }
-    .left_menu li{ display:block; color: #faecf8; padding: 15px;width: 100%; text-align: center;}
+    .left_menu li{  color: #faecf8; line-height: 40px;width: 100%; text-align: center;}
     .left_menu li:hover { border-radius: 4px; }
     
     .right_menu {display:none;  }
