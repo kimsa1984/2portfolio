@@ -9,20 +9,20 @@
     /* 주요 컨텐츠 사이즈 */
     .container {width: 100%; height: 100%; margin: 0 auto; border: 1px solid orange;}
 
-    header {width: 100%; height:120px; }  
+    header {width: 100%; height:150px; }  
     header .container {display: flex; justify-content: space-between;} 
     header .container .top_logo img {width: 90%; display: flex; justify-items: center; align-items: center; padding: 5%;}
     .search_box {display: none;}
     .search_box i {display: none;}
     
-    .nav {width:100%;  }
+    .nav {width:100% }
     
     .left_menu {display:none; }
-    .left_menu li{  color: #faecf8; line-height: 40px;width: 100%; text-align: center;}
-    .left_menu li:hover { border-radius: 4px; }
+    .left_menu li{  color: #faecf8; line-height: 30px;width: 100vw; text-align: center;}
+    .left_menu li:hover { border-radius: 4px; background-color: #fff; }
     
     .right_menu {display:none;  }
-    .right_menu li{display: block;  color: #faecf8; padding:15px; width: 100%; text-align: center;}
+    .right_menu li{ color: #faecf8; line-height: 40px;width: 100vw; text-align: center;}
     .right_menu li:hover { border-radius: 4px; }
 
     .menu_icon {width: 90px; height: 120px; display: flex; justify-content:right; align-items: center; }

@@ -66,16 +66,19 @@
           //nav 햄버거 메뉴
           $(function () {
             $('.menu_icon').click(function () {
-              $('.nav').slideToggle();
+              $('.nav').stop().slideToggle();
             })
           });
 
           $(window).resize(function(){
             if(window.innerWidth<=599){
               $('.nav').show();
+              $('.nav left_menu').hide();
+            } else {
               $('.nav').hide();
-             
+              $('.nav').hide();
             }
+
           });
 
 
