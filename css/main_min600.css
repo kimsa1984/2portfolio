@@ -37,7 +37,6 @@
     .menu_box li {font-size: 25px;  line-height: 35px;  padding: 2%;}
     #our_menu .menu_box .mbox { width: 33.3%; height: auto; float: left;}
     #our_menu .menu_box img {width: 100%;  z-index: 10;margin-top: 120px; }
-    /* #our_menu .menu_box .mbox:first-child img {margin-top: 150px;} */
     #our_menu .menu_box img {
      -webkit-transition-duration: 1s;
      -moz-transition-duration: 1s;
@@ -101,7 +100,6 @@
      #booking .book input {width: 45%; height:55px; border: none; border-bottom: 1px solid #d3af7b; background-color: transparent; color: #333; margin: 2% 2%; font-size: 18px;}
      #booking .book input:focus {outline: none; background-color: transparent;}
      #booking .book input::placeholder {color: #333;}
-     /* #booking .book input[type="tel"] {display: initial;} */
      #booking .book input[type="date"]::-webkit-inner-spin-button {display: none;}
      #booking .book input[type="time"]::-webkit-inner-spin-button {display: none;}
      #booking .book textarea {width: 45%; height: 55px; border: none; border-bottom: 1px solid #d3af7b; background-color: transparent; color: #fff; margin:2%; font-size: 18px;}

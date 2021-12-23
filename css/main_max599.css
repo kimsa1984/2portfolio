@@ -101,9 +101,8 @@
     .menu_box p {width:100vw; text-align: center; font-size: 30px; }
     .menu_box li {width:100vw; font-size: 25px;  text-align: center; padding: 10px;}
     #our_menu .menu_box .mbox { width: 33%; height: auto; display: flex; flex-direction: column; justify-content: start;}
-    /* #our_menu .menu_box img {width:100vw;  z-index: 10; } */
-    #our_menu .menu_box .mbox:first-child img {width: 97vw;display: flex; justify-items: start; }
-    #our_menu .menu_box .mbox:last-child img {width: 97vw; display: flex; justify-items: flex-end;  }
+    #our_menu .menu_box .mbox:first-child img {width: 96vw;display: flex; justify-items: start; }
+    #our_menu .menu_box .mbox:last-child img {width: 96vw; display: flex; justify-items: flex-end;  }
     #our_menu .menu_box img {
      -webkit-transition-duration: 1s;
      -moz-transition-duration: 1s;
