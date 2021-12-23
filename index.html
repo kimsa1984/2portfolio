@@ -75,13 +75,14 @@
           });
 
           $(window).resize(function(){
-            if(window.innerWidth<=599){
+            if(window.innerWidth>=599){
               $('.nav left_menu').show();
               $('.nav right_menu').hide();
             } 
             else {
               $('.nav').hide();
                $('.nav').hide();
+               $('.top_logo img').hide();
            }
           });
 
