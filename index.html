@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/main_min1300.css">
   <!-- <script src="js/modal.js"></script>
   <script src="js/header_fixed.js"></script> -->
+  
 
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js">
   </script>
@@ -24,11 +25,11 @@
 </head>
 
 
-<body>
+<body style="overflow-x: hidden">
   <div id="wrap">
     <div class="top-img">
       <img src="img/h1-deco-img-6.png" class="top1">
-     
+
     </div>
     <div class="top-img2">
       <img src="img/h1-deco-img-5.png" class="top2">
@@ -37,92 +38,83 @@
 
     <header>
       <div class="container">
-        
-        <div class="search_box">
-           SEARCH<a href="index.html">
-            
-           <i class="fas fa-search"></i></a></div>
-        
-        <ul class="nav left_menu">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">PAGES</a></li>
-          <li><a href="#">BLOG</a></li>
-        </ul>
 
-        <div class="top_logo">
-          <a href="index.html"><img src="img/logo_kims.png" alt=""></a>
+        <div class="search_box">
+          SEARCH<a href="index.html">
+
+            <i class="fas fa-search"></i></a></div>
+
+        <div class="nav">
+          <ul class="left_menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PAGES</a></li>
+            <li><a href="#">BLOG</a></li>
+          </ul>
+
+          <div class="top_logo">
+            <a href="index.html"><img src="img/logo_kims.png" alt=""></a>
           </div>
 
-        <ul class="nav right_menu">
-          <li><a href="#">SHOP</a></li>
-          <li><a href="#">MENU</a></li>
-          <li><a href="#">LANDING</a></li>
-        </ul>
+          <ul class="right_menu">
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">LANDING</a></li>
+          </ul>
+        </div>
 
         <div class="menu_icon">
           <i class="fas fa-bars"></i>
         </div>
 
-        <!-- <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> -->
-
-               <script>
+        <script>
           //nav 햄버거 메뉴
           $(function () {
             $('.menu_icon').click(function () {
-              $('.nav').slideToggle();
+              $('.left_menu, .right_menu').slideToggle();
             })
           });
 
-          $(window).resize(function(){
-            if(window.innerWidth>=599){
-              $('.nav left_menu').show();
-              $('.nav right_menu').hide();
-            } 
+          $(window).resize(function () {
+            if (window.innerWidth >= 599) {
+              $('.left_menu, .right_menu').show();
+            }
             else {
-              $('.nav').hide();
-               $('.nav').hide();
+              $('.left_menu, .right_menu').hide();
             }
           });
 
-          // function openNav() {
-          //     document.getElementById("myNav").style.width = "100%";
-          //   }
-          //   function closeNav() {
-          //     document.getElementById("myNav").style.width = "0%";
-          //   }
-
+          
         </script>
 
       </div>
-      
+
 
     </header>
 
 
     <div id="slider">
-      
+
 
       <ul class="slide">
         <li><img src="img/h1-slider-img-1.jpg" alt="">
           <div class="slidetext">
-           <h1>SYMPLY DELICIOUS</h1>
-           <button><a href="#">VIEW MORE</a></button>
+            <h1>SYMPLY DELICIOUS</h1>
+            <button><a href="#">VIEW MORE</a></button>
           </div>
         </li>
         <li>
           <img src="img/h1-slider-img-2.jpg" alt="">
           <div class="slidetext">
-             <h1>ALWAYS FRESH</h1>
-            <button><a href="#">VIEW MORE</a></button> 
+            <h1>ALWAYS FRESH</h1>
+            <button><a href="#">VIEW MORE</a></button>
           </div>
-         
+
         </li>
         <li><img src="img/h1-slider-img-3.jpg" alt="">
           <div class="slidetext">
             <h1>FURE ARTISTRY</h1>
-           <button><a href="#">VIEW MORE</a></button> 
-           </div>
+            <button><a href="#">VIEW MORE</a></button>
+          </div>
         </li>
       </ul>
 
@@ -130,11 +122,11 @@
 
       <span class="next">&gt;</span>
 
-      
+
 
       <script>
         /*슬라이드 이미지 함수*/
-        if (window.matchMedia("(min-width: 1300px)").matches) { 
+        if (window.matchMedia("(min-width: 1300px)").matches) {
 
           $('.prev').click(function () {
             $('.slide li:last').prependTo('.slide');
@@ -149,9 +141,9 @@
             });
           });
 
-        } else { 
+        } else {
 
-          let w=window.innerWidth;
+          let w = window.innerWidth;
 
           $('.prev').click(function () {
             $('.slide li:last').prependTo('.slide');
@@ -167,11 +159,11 @@
           });
 
 
-        }        
+        }
 
         /*슬라이드 텍스트*/
-        $(document).ready(function(){
-          $(".slide span").click(function(){
+        $(document).ready(function () {
+          $(".slide span").click(function () {
             $('h1').fadeToggle();
           });
         });
@@ -267,13 +259,13 @@
     <div id="package">
       <div class="pack_deco">
         <img src="img/h1-deco-img-1.png">
-    
-    
-    
+
+
+
         <div class="container">
           <button id="a">click</button>
         </div>
-    
+
       </div>
     </div>
 
@@ -282,7 +274,7 @@
       <iframe src="https://www.youtube.com/embed/NA9z8atd8F4?autoplay=1&amp;mute=1" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
-     
+
 
       <button id="b">stop</button>
     </div>
@@ -307,7 +299,7 @@
         <img src="img/h1-deco-img-2.png">
 
         <div class="slideshow-container">
-          
+
           <div class="mySlides fade">
             <p class="fade">
               “Lorem ip ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus
@@ -321,7 +313,7 @@
               pharetra et. Non tellus orci ac auctor augu.”</p>
             <h5>Mike Brandn / Chef</h5>
           </div>
-    
+
           <div class="mySlides fade">
             <p class="fade">
               “Lorem ip ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus
@@ -330,7 +322,7 @@
           </div>
 
         </div>
-<!-- 
+        <!-- 
         <span class="mi_prev">&lt;</span>
         <span class="mi_next">&gt;</span>
      -->
@@ -362,7 +354,7 @@
           }
 
         </script>
-        </div>
+      </div>
     </div>
 
     <div id="booking">
@@ -373,19 +365,19 @@
         <input type="text" name="l_name" class="name" placeholder="LAST NAME">
         <input type="date" onfocus="(this.type='date')" name="date" placeholder="Date">
         <input type="text" onfocus="(this.type='time')" name="time" placeholder="Time">
-        <input type="tel" name="phone"placeholder="Phone">
+        <input type="tel" name="phone" placeholder="Phone">
         <textarea name="message" class="memo" placeholder="Message"></textarea>
         <button>Appointment</button>
       </div>
 
-      
+
     </div>
 
     <div class="insta">
       <div class="intext">
         <h2>FOLLOW ON INSTAGRAM</h2>
       </div>
-     
+
       <div class="imgbox">
         <img src="img/in1.JPG" alt="">
       </div>
@@ -393,45 +385,45 @@
         <img src="img/in3.JPG" alt="">
       </div>
       <div class="imgbox">
-       <img src="img/in5.JPG" alt="">
-    
+        <img src="img/in5.JPG" alt="">
+
       </div>
       <div class="imgbox">
         <img src="img/in4.JPG" alt="">
       </div>
 
-      
+
     </div>
 
     <div id="iconbar">
-        <div class="iconwrap">
+      <div class="iconwrap">
 
-          <div class="iconlogo">
-            <img width="195" height="99" src="img/h1-client-img-1-hover.png" alt="">
-          </div>
-    
-         <div class="iconlogo">
-           <img width="195" height="99" src="img/h1-client-img-2-hover.png" alt="">
-         </div>
-          
-          <div class="iconlogo">
-            <img width="195" height="99" src="img/h1-client-img-3-hover.png" alt="">
-          </div>
-    
-          <div class="iconlogo">
-            <img width="195" height="99" src="img/h1-client-img-4-hover.png" alt="">
-          </div>
-    
-          <div class="iconlogo">
-            <img width="195" height="99" src="img/h1-client-img-5-hover.png" alt="">
-          </div>
-    
-          <div class="iconlogo">
-            <img width="195" height="99" src="img/h1-client-img-6-hover.png" alt="">
-          </div>
-
+        <div class="iconlogo">
+          <img width="195" height="99" src="img/h1-client-img-1-hover.png" alt="">
         </div>
-      
+
+        <div class="iconlogo">
+          <img width="195" height="99" src="img/h1-client-img-2-hover.png" alt="">
+        </div>
+
+        <div class="iconlogo">
+          <img width="195" height="99" src="img/h1-client-img-3-hover.png" alt="">
+        </div>
+
+        <div class="iconlogo">
+          <img width="195" height="99" src="img/h1-client-img-4-hover.png" alt="">
+        </div>
+
+        <div class="iconlogo">
+          <img width="195" height="99" src="img/h1-client-img-5-hover.png" alt="">
+        </div>
+
+        <div class="iconlogo">
+          <img width="195" height="99" src="img/h1-client-img-6-hover.png" alt="">
+        </div>
+
+      </div>
+
     </div>
 
 
@@ -440,33 +432,33 @@
         <div class="footbox">
           <h5>Contact Us</h5>
           <p>9 W 53rd St, New York,<br>
-          NY 10019, USA</p>
-        <p><a href="tel:123456789" target="_blank" rel="noopener">+1 212-344-1230</a><br>
-          <a href="tel:123456789" target="_blank" rel="noopener">+1 212-555-1230</a>
-        </p>
+            NY 10019, USA</p>
+          <p><a href="tel:123456789" target="_blank" rel="noopener">+1 212-344-1230</a><br>
+            <a href="tel:123456789" target="_blank" rel="noopener">+1 212-555-1230</a>
+          </p>
         </div>
-        
+
         <div class="footbox">
-        <img src="img/logo_kims.png" width="130" height="60">
-        <h5>Chef’s kiss for restaurants and cafés. Drew, the most important ingredient for your site.</h5>
+          <img src="img/logo_kims.png" width="130" height="60">
+          <h5>Chef’s kiss for restaurants and cafés. Drew, the most important ingredient for your site.</h5>
         </div>
 
-        
 
-      <div class="footbox">
-        <h5>Working Hours</h5>
-        <p>
-          Monday-Friday:
-          08:00-22:00 </p>
-    
-         <p> Saturday-Sunday:
-          10:00-16:00
-        </p>
-      
-        
-       
-      </div>
-      <p id="footbottom">© 2021 Qode Interactive, All Rights Reserved</p>
+
+        <div class="footbox">
+          <h5>Working Hours</h5>
+          <p>
+            Monday-Friday:
+            08:00-22:00 </p>
+
+          <p> Saturday-Sunday:
+            10:00-16:00
+          </p>
+
+
+
+        </div>
+        <p id="footbottom">© 2021 Qode Interactive, All Rights Reserved</p>
     </footer>
 
   </div>

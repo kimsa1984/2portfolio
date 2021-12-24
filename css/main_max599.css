@@ -108,7 +108,8 @@
      -moz-transition-duration: 1s;
      -ms-transition-duration: 1s;
      -o-transition-duration: 1s;
-     transition-duration: 1s;  }
+     transition-duration: 1s;  
+     margin-top: 50px; }
 
      #our_menu .menu_box img:hover {
       
