@@ -2,10 +2,8 @@
 
 @media (max-width:599px){ 
 
-    #wrap {width: 100%; background-color: rgb(247, 234, 236);position: relative;  }
-    .top-img .top1 {display: none;}
-    .top-img2 .top2 {display: none;}
-
+    #wrap {width: 100%; background-color: #fff;position: relative;  }
+    
     /* 주요 컨텐츠 사이즈 */
     .container {width: 100%; height:100%; margin: 0 auto; border: 1px solid orange;}
 
@@ -21,11 +19,6 @@
    
     .left_menu li{ color: #faecf8; display: flex; justify-content: center; align-items: center; width: 100%;}
     .left_menu li:hover { border-radius: 4px; background-color: #eee; }
-/* 
-    .left_menu.sub {background-color:#ddd; display:none;}
-    .left_menu.sub>li:hover {background-color:gold;} */
-
-
        
     .right_menu {width:100%; position: absolute; top: 180px; z-index: 10; display: flex; align-items: center; justify-content: space-evenly; flex-direction: column; background-color: #fff; opacity: 0.6;}
     
@@ -48,7 +41,7 @@
 
 @media (min-width:600px) and (max-width:1299px){ 
 
-    #wrap {width: 100%; background-color: rgb(247, 234, 236);position: relative;  }
+    #wrap {width: 100%; background-color: #fff;position: relative;  }
     .top-img .top1 {display: none; }
     .top-img2 .top2 {display: none; }
 
@@ -91,6 +84,7 @@
 }
         
 @media (min-width:1300px){ 
+
 
     /* 주요 컨텐츠 사이즈 */
     .container {width: 1300px; height: 100%; margin: 0 auto; border: 1px solid orange;}
