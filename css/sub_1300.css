@@ -1,19 +1,23 @@
 @media (min-width:1300px) {
 
-#wrap {width: 100%; background-color: #fff;}
+#wrap {width: 100%; background-color: #fff; }
 
 /*주요컨텐츠*/
 .container {width: 1100px; height: 100%; margin: 0 auto; border: 1px solid orange; }
 
-#sub_slider { width:100% ;height: 500px; background-image: url(../img/blog-img-02.png);  background-size:cover; z-index: 5;}
-#sub_slider h2 { text-align: center; position: absolute; top: 150px; left: 150px; font-size: 40px; color: #666;}
+#sub_slider { width:100% ;height: 500px; background-image: url(../img/blog-img-02.png);  background-size:cover;}
+.slbox {width: 30%; height: 150px; position: relative;}
+.slbox h1 {font-size: 40px; color: #666; text-align: center; }
 
-#sub {width: 1100px; height: 1000px; background-color: green; position: relative;}
+#sub {width: 1100px; height: 1000px; background-color: green; display: flex;
+justify-content: center; align-items: center;}
 
-
-.subleft {width: 500px; height: 100%; background-color: blueviolet;}
-
+.subleft {width: 500px; height: 2000px; background-color: blueviolet;}
 .left1 {width: 100%; height: 800px;}
-.left1 img {width: 300px; }
-
+.left1 img {height: 300px; }
+.left2 {width: 100%; height: 500px;}
+.left3 {width: 100%; height: 500px;}
+.left4 {width: 100%; height: 600px;}
+.left4 img {width: 500px; height: 500px;}
+.left5 {width: 100%; height: 700px;}
 }
