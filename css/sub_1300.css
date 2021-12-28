@@ -1,18 +1,18 @@
 @media (min-width:1300px) {
 
-#wrap {width: 100%; background-color: #fff; }
+#wrap {width: 100%; background-color: #fff; display: flex; justify-content: center; align-items: center;}
 
 /*주요컨텐츠*/
-.container {width: 1100px; height: 100%; margin: 0 auto; border: 1px solid orange; }
+.container {width: 1100px; height: 100%; margin: 0 auto; border: 1px solid blue; } 
 
-#sub_slider { width:100% ;height: 500px; background-image: url(../img/blog-img-02.png);  background-size:cover;}
-.slbox {width: 30%; height: 150px; position: relative;}
-.slbox h1 {font-size: 40px; color: #666; text-align: center; }
+#sub_slider { width:100% ;height: 300px; background-image: url(../img/blog-img-02.png);  background-size:cover; background-position: center;}
+.sltext {width: 100%; height: 100%; display: flex; align-items: center;justify-content: center;}
+h1 {font-size: 40px; color: #666; text-align: center; font-weight: bold;}
 
 #sub {width: 1100px; height: 1000px; background-color: green; display: flex;
 justify-content: center; align-items: center;}
 
-.subleft {width: 500px; height: 2000px; background-color: blueviolet;}
+.subleft {width: 500px; background-color: blueviolet; display: flex; }
 .left1 {width: 50%; height: 800px;}
 .left1 img {height: 300px; }
 .left2 {width:50%; height: 500px;}
