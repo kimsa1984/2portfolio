@@ -1,22 +1,22 @@
 @media (min-width:1300px) {
 
-#wrap {width: 100%; background-color: #fff; display: flex; justify-content: center; align-items: center;}
+#wrap {width: 100%; background-color: #fff; position: relative;}
 
 /*주요컨텐츠*/
 .container {width: 1100px; height: 100%; margin: 0 auto; border: 1px solid blue; } 
 
-#sub_slider { height: 500px;  background-size:cover; background-position: center;}
-#sub_slider .slbox {height: 500px; background-color: #fff; background-image: url(../img/blog-img-02.png); }
+#sub_slider { height: 500px; }
+#sub_slider .slbox {height: 500px; background-color: #fff; background-image: url(../img/blog-img-02.png); background-size:cover; background-position: center; }
 .slsbox .sltext {height: 100%;position: absolute; color: orangered;}
 
-#sub {width: 1100px; height: 1000px; background-color: green; }
-
-.subleft {width: 500px; background-color: blueviolet; display: flex;
+#sub {width: 1100px; height: 1000px; background-color: green;display: flex;
 justify-content: center; flex-direction: column; }
+
+.subleft {width: 50%; background-color: blueviolet; position: relative; }
 .left1 {width: 50%; height: 800px;}
 .left1 img {height: 300px; width: 500px; }
 .left2 {width:50%; height: 500px;}
-.left3 {width:500%; height: 500px;}
+.left3 {width:50%; height: 500px;}
 .left4 {width: 50%; height: 600px;}
 .left4 img {width: 500px; height: 500px;}
 .left5 {width: 50%; height: 700px;}
