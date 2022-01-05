@@ -167,15 +167,16 @@
         display: flex;
         flex-wrap: wrap;
         align-content: center;
+        position: relative;
     }
     .left5 .left5img {
         position: absolute;
-        bottom: -290%;
-        transform: translateX(185%) translateY(-50%);
+        top: 50%;
+        transform: translateX(180%) translateY(-50%);
         background-image: url(../img/p-deco-img-2.png); 
         background-size: cover; 
         background-position: center; 
-        z-index:-6;
+        z-index:-10;
     } 
     
     .left5 h3 {
