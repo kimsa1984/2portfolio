@@ -2,7 +2,14 @@
 
     #wrap {width: 100%; background-color: #fff;}
 
-    .container {width: 1300px; height: 100%; margin: 0 auto; border: 1px solid rgb(199, 199, 243); display: flex; flex-flow: row nowrap;} 
+    .container {
+        width: 1300px; 
+        height: 100%; 
+        margin: 0 auto; 
+        /* border: 1px solid rgb(199, 199, 243);  */
+        display: flex; 
+        flex-flow: row nowrap;
+    } 
       /* 주요 content size */
     
     #top_slider {
@@ -213,6 +220,7 @@
         flex-direction: column;
         align-items: center;
     }
+    .sub_right h4{font-size: 30px;}
     
     .sub_right .right1 {
         width: 100%;
@@ -279,6 +287,70 @@
     
     .sub_right .right2 img { width: 100%; }      
 
-
     .sub_right .right2 .right2_icon {letter-spacing: 6px;}
+
+    .sub_right .right3 {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    .sub_right .blog_box { height: 280px; margin: 20px 0 0px;}
+
+    .sub_right .right3 img{ width: 100%; }
+
+    .sub_right .right3 span{ color: rgb(133, 130, 130); }
+
+    .sub_right .right3 p{
+        font-size: 24px; 
+        line-height: 30px; 
+        font-weight: normal;
+        padding: 5px 0 15px;
+    }
+
+    .sub_right .right4 {
+        width: 100%; 
+        height: 200px; 
+        margin-top: 50px;
+        line-height: 49px;
+      
+    }
+    .sub_right .right4 li{
+        color: #666; 
+        width: 100%; 
+        height: 45px; 
+        font-size:22px;
+    }
+
+    .sub_right .right5 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .sub_right .right5 img {width: 32%; margin-top: 15px;}
+
+    .sub_right .right6 {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .sub_right .tagbox {
+        box-sizing: border-box; 
+        display: flex; 
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .sub_right .tag {
+        font-size: 20px;
+        background-color:#fef3f2 ;
+        border: 1px solid #fef3f2 ;
+        padding: 9px;
+        margin: 10px 18px 12px 1px;
+        color: #666;
+    }
+
 }
