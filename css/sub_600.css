@@ -32,7 +32,7 @@
         right: 0;
         text-align: center;
         font-size:72px;
-        color: rgb(241, 89, 28, 0.8);
+        color: rgb(241, 89, 28, 0.9);
         font-family: sans-serif;
     }
     
@@ -142,7 +142,7 @@
     }
 
     .text4 .text4right {
-        width: 20%;
+        width: 25%;
     }
 
     .text4 ul {
@@ -213,7 +213,7 @@
     .left5 h3 {
         width: 100%; 
         color: #fff ;
-        font-size:40px;
+        font-size:35px;
         text-align: center;
         padding-top: 40px;
     }
@@ -279,31 +279,30 @@
     }
     
     .sub_right .right2 {
-        /* width: 100%; */
-        height: 400px;
+        height: 480px;
         margin-bottom: 40px;
         background-color: rgb(248, 233, 236);
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-content: space-around;
-        padding: 30px;
+        padding: 25px;
     
     }
     
     .sub_right .right2 >.textbox {
-        width: 100%;
+        width: 95%;
         flex-direction: column;
         text-align: center;
     }    
     
     .sub_right .right2 span {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 30px;
         color: #555;
     }
     
-    .sub_right .right2 img { width: 100%; }      
+    .sub_right .right2 img { width:75%; }      
 
     .sub_right .right2 .right2_icon {letter-spacing: 6px;}
 
@@ -315,14 +314,14 @@
         justify-content: space-around;
     }
 
-    .sub_right .blog_box { height: 280px; margin: 20px 0 0px;}
+    .sub_right .blog_box { height: 530px; margin: 30px 0 0px;}
 
     .sub_right .right3 img{ width: 100%; }
 
     .sub_right .right3 span{ color: rgb(133, 130, 130); }
 
     .sub_right .right3 p{
-        font-size: 24px; 
+        font-size: 25px; 
         line-height: 30px; 
         font-weight: normal;
         padding: 5px 0 15px;
@@ -331,9 +330,8 @@
     .sub_right .right4 {
         width: 100%; 
         height: 200px; 
-        margin-top: 50px;
-        line-height: 49px;
-      
+        margin-top: 35px;
+        line-height: 50px;
     }
     .sub_right .right4 li{
         color: #666; 
@@ -341,6 +339,7 @@
         height: 45px; 
         font-size:22px;
     }
+    .sub_right .right4 li a:hover{ color: #666; }
 
     .sub_right .right5 {
         width: 100%;
@@ -355,6 +354,7 @@
     .sub_right .right6 {
         width: 100%;
         margin-top: 30px;
+        margin-bottom: 30px;
     }
     .sub_right .tagbox {
         box-sizing: border-box; 
@@ -369,6 +369,14 @@
         padding: 9px;
         margin: 10px 18px 12px 1px;
         color: #666;
+    }
+    .sub_right .tag a:hover {
+        cursor: pointer; 
+        box-sizing: border-box;
+        border: 1px solid rgba(248, 204, 226, 0.7); 
+        background-color: rgba(248, 204, 226, 0.7);
+        padding: 3px;
+        
     }
 
 

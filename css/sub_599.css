@@ -1,3 +1,384 @@
-@media (max-width:599px){}
+@media (max-width:599px){
+    #wrap {width: 100%; background-color: #fff;}
+
+    .container {
+        width: 100%; 
+        height: 100%; 
+        margin: 0 auto; 
+        display: flex; 
+        flex-flow: row wrap;
+    } 
+      /* 주요 content size */
+    
+    #top_slider {
+         width:100%;
+         height: 500px;
+         position: relative;
+    }
+    #top_slider img {
+        width:100%; 
+        height: 500px;
+        background-color: #fff; 
+        background-image: url(../img/blog-img-04.jpg); 
+        background-size:cover; 
+        background-position: center; 
+    }
+    
+    #top_slider h2 {
+        position: absolute;
+        top: 38%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size:55px;
+        color: rgb(241, 89, 28, 0.9);
+        font-family: sans-serif;
+    }
+    
+    #sub {width: 100%; margin-top: 120px;}
+    
+    .subleft {
+        width: 100%; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        
+        padding: 0 25px;
+    }
+
+    .subleft .p1{
+        font-size: 35px;
+        font-family: "바탕체";
+        padding: 20px 0 10px;
+        color: #333;
+    }
+    .subleft p{
+        font-size: 15px;
+        color: #555555;
+        padding: 0px 0 10px;
+        font-weight: lighter;
+    }
+
+    .subleft .p2{
+        font-size: 19px;
+        color: #555555;
+        padding: 0px 0 10px;
+    }
+
+    .left1 {width: 100%; }
+
+    .left1 img {
+        width:100%;
+        margin-bottom: 30px; 
+        display: block;
+    }
+    .left2 {
+        width:100%; 
+        height:auto ; 
+        padding-bottom: 80px;
+        
+    }
+    .left2 h4 {font-size: 16px;}
+    
+    .left2 .textbox3> ul li{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        text-transform: capitalize;
+    }
+    
+    .left3 {
+        width:100%; 
+        height:280px ;
+        background-color:#fef3f2;
+        position: relative;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 30px;
+        z-index: 1;
+    }
+    .left3 img {
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        background-image: url(../img/h1-deco-img-5.png); 
+        background-size: cover; 
+        background-position: center; 
+        z-index:-5;
+    }
+    
+    .left3 .text3 h4 {
+        width: 100%;
+        padding: 30px;
+        text-align: center; 
+        font-size: 28px;
+       color: #666;
+       
+    }
+    .left3 span {font-weight: lighter;}
+
+    .left4 {
+        width: 100%; 
+        height:auto;
+        display: inline-block;
+        position: relative;
+        margin-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .left4 img { width:100% ; padding-bottom: 20px }
+
+    .text4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 11px;
+        clear: both;
+    }
+
+    .text4 .text4left {
+        flex-basis: 50%;
+    }
+
+    .text4 .text4right {
+        width:50%;
+    }
+
+    .text4 ul {
+        position: relative;
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 50%;
+        vertical-align: top;
+        letter-spacing: 3px;
+    }
+
+    .text4 li{
+        float: left;
+        padding: 0px 5px;
+    }
+    .text4 .text_gray{
+        letter-spacing: 3px;
+        font-size: 15px;
+    }
+      .text4 a{
+        position: relative;
+        display: inline-block;
+        transition: .3s;
+    }
+
+     .text4 a::after {
+        position: absolute;
+        bottom: .3em;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #2ecc71;
+        opacity: 0;
+        transition: .3s;
+    }
+
+     .text4 a:hover::after{
+        bottom: 0;
+        opacity: 1;
+    }
+
+    .left5 {
+        width:100%; 
+        height:250px ;
+        background-color: rgb(136, 214, 188);
+        /* position: relative;
+        text-align: center; */
+        padding-bottom: 80px;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        position: relative;
+    }
+    .left5 .left5img {
+        position: absolute;
+        top: 50%;
+        transform: translateX(80%) translateY(-50%);
+        background-image: url(../img/p-deco-img-2.png); 
+        background-size: cover; 
+        background-position: center; 
+        z-index:-10;
+    } 
+    
+    .left5 h3 {
+        width: 100%; 
+        color: #fff ;
+        font-size:35px;
+        text-align: center;
+        padding-top: 40px;
+    }
+    
+    .left6 {
+        width: 100%; 
+        height: 50px; 
+        font-size: 25px;
+        padding: 35px 0 80px 33% ;
+        letter-spacing: 20px;
+    }
+    .left6 .footnav a:hover {
+        background-color: rgb(248, 227, 242);
+        border-radius: 45%;
+    }
+    
+    .sub_right{ 
+        width:100%; 
+        margin: 0 0 0 30px;  
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sub_right h4{font-size: 30px;}
+    
+    .sub_right .right1 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .sub_right >.right1 >.input_box {
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid gray;
+    }
+    
+    .sub_right >.right1 >.input_box >input {
+        width: 100%;
+        height: 50px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        color: #333;
+        padding-left: 20px;
+        font-size: 18px;
+    }
+    
+    .sub_right >.right1 >.input_box >input::placeholder {
+        color: #9d9d9d;
+    }
+    
+    .sub_right >.right1 >.input_box >i {
+        font-size: 1.4rem;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: #666;
+    }
+    
+    .sub_right >.right1 >.input_box >i:hover {
+        cursor: pointer;
+    }
+    
+    .sub_right .right2 {
+        height: 480px;
+        margin-bottom: 40px;
+        background-color: rgb(248, 233, 236);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+        padding: 25px;
+    
+    }
+    
+    .sub_right .right2 >.textbox {
+        width: 95%;
+        flex-direction: column;
+        text-align: center;
+    }    
+    
+    .sub_right .right2 span {
+        font-size: 20px;
+        line-height: 30px;
+        color: #555;
+    }
+    
+    .sub_right .right2 img { width:75%; }      
+
+    .sub_right .right2 .right2_icon {letter-spacing: 6px;}
+
+    .sub_right .right3 {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    .sub_right .blog_box { height: 350px; margin: 30px 0 0px;}
+
+    .sub_right .right3 img{ width: 100%; }
+
+    .sub_right .right3 span{ color: rgb(133, 130, 130); }
+
+    .sub_right .right3 p{
+        font-size: 23px; 
+        line-height: 30px; 
+        font-weight: normal;
+        padding: 5px 0 15px;
+    }
+
+    .sub_right .right4 {
+        width: 100%; 
+        height: 200px; 
+        margin-top: 35px;
+        line-height: 50px;
+    }
+    .sub_right .right4 li{
+        color: #666; 
+        width: 100%; 
+        height: 45px; 
+        font-size:20px;
+    }
+    .sub_right .right4 li a:hover{ color: #666; }
+
+    .sub_right .right5 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .sub_right .right5 img {width: 45%; margin-top: 15px;}
+
+    .sub_right .right6 {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .sub_right .tagbox {
+        box-sizing: border-box; 
+        display: flex; 
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .sub_right .tag {
+        font-size: 20px;
+        background-color:#fef3f2 ;
+        border: 1px solid #fef3f2 ;
+        padding: 9px;
+        margin: 10px 18px 12px 1px;
+        color: #666;
+    }
+    .sub_right .tag a:hover {
+        cursor: pointer; 
+        box-sizing: border-box;
+        border: 1px solid rgba(248, 204, 226, 0.7); 
+        background-color: rgba(248, 204, 226, 0.7);
+        padding: 3px;
+        
+    }
+
+}
 
   
