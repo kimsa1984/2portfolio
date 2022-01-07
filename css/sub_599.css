@@ -22,6 +22,7 @@
         background-image: url(../img/blog-img-04.jpg); 
         background-size:cover; 
         background-position: center; 
+        margin-top: 20px;
     }
     
     #top_slider h2 {
