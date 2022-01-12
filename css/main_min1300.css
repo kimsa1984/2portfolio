@@ -16,7 +16,11 @@
     .slide h1 { font-size: 80px; margin-top: -50px; color: #fff;
         margin-bottom: 20px; text-align: center;}
     #slider button {width:200px; height: 70px; display: block; background-color: #fff; color: #000; margin: 0 auto;  border:none; font-weight: bold; }
+<<<<<<< HEAD
     #slider button:hover { cursor:pointer; background-color:red; color:#fff; }
+=======
+    #slider button:hover { cursor:pointer; background-color:#000; color:red; }
+>>>>>>> 80385de43de9b550327a639544cd1000ac38e812
     span {position: absolute; top:300px; display: block; font-size: 38px; color:#fff; line-height: 40px;  background: rgba(0,0,0,0.6); cursor: pointer; height: 50px; transform: translateY(-50%); }
     span:hover {background: rgba(255,255,255,0.8); color:#000;}
     .prev {left:0; border-radius: 0 10px 10px 0px; padding: 0 8px 0 2px; }
