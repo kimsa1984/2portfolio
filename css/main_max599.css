@@ -67,13 +67,12 @@
     }
     #slider button:hover {
          cursor:pointer;
-<<<<<<< HEAD
+
          background-color:red;
          color:#fff;
-=======
+
          background-color:#000;
          color:red;
->>>>>>> 80385de43de9b550327a639544cd1000ac38e812
     }
     span {
         position: absolute;
